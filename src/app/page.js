@@ -2,8 +2,11 @@
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useState } from 'react';
 
 export default function Home() {
+  const [isVisible, setIsVisible] = useState(true);
+
   return (
     <>
       <div style={{
@@ -12,7 +15,9 @@ export default function Home() {
         height: "100vh",
         gap:"0.8rem"
       }}>
-        <motion.div 
+        <button className='btn' onClick={() => setIsVisible(!isVisible)}>SHOW/HIDE</button>
+        {isVisible && 
+        (<motion.div 
           initial={{ // used to set Initiale motion of div
             rotate:"0deg"
           }}
@@ -32,7 +37,7 @@ export default function Home() {
             backgroundColor:"black"
           }}
         >
-        </motion.div>
+        </motion.div>)}
       </div>
     </>
   )
