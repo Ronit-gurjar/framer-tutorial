@@ -13,11 +13,18 @@ export default function Home() {
         gap:"0.8rem"
       }}>
         <motion.div 
-          initial={{
+          initial={{ // used to set Initiale motion of div
             rotate:"0deg"
           }}
-          animate={{
+          animate={{ // used to set animated motion of div
             rotate:"180deg"
+          }}
+          exit={{
+            rotate:"0deg"
+          }}
+          transition={{ // used to set transition prop to motion of div
+            duration: 1,
+            ease:"backInOut"          
           }}
           style={{
             width:150,
