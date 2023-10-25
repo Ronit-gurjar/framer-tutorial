@@ -12,8 +12,19 @@ export default function Home() {
         height: "100vh",
         gap:"0.8rem"
       }}>
-        <motion.div>
-          hello
+        <motion.div 
+          initial={{
+            rotate:"0deg"
+          }}
+          animate={{
+            rotate:"180deg"
+          }}
+          style={{
+            width:150,
+            height:150,
+            backgroundColor:"black"
+          }}
+        >
         </motion.div>
       </div>
     </>
