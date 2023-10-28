@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react';
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
         gap:"0.8rem"
       }}>
         <button className='btn' onClick={() => setIsVisible(!isVisible)}>SHOW/HIDE</button>
+        <AnimatePresence>
         {isVisible && 
         (<motion.div 
           initial={{ // used to set Initiale motion of div
@@ -38,6 +39,7 @@ export default function Home() {
           }}
         >
         </motion.div>)}
+        </AnimatePresence>
       </div>
     </>
   )
