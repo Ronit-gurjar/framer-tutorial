@@ -9,6 +9,8 @@ const Guestures = () => {
         height: "100vh",
         gap:"0.8rem"
       }}>
+        <h1 style={{fontSize:"larger"}}>Basic animation with guestures</h1>
+        <br/>
         <MotionConfig     //Instead of setting transition prop inside each button we can just use MotionConfig to set it one for all
             transition={{
                 duration: 0.150,

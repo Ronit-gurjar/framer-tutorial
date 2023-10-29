@@ -10,7 +10,11 @@ const ViewBasedAnimations = () => {
         height: "120vh",
         display: 'grid',
         placeContent: "center center",
-        gap:"0.8rem"}}>scroll down a bit 👇</div>
+        gap:"0.8rem"}}>
+          <h1 style={{fontSize:"larger"}}>Basic view based animation</h1>
+          <br/>
+          scroll down a bit 👇
+    </div>
     <motion.div
     style={{
         height:"100vh",

@@ -4,7 +4,9 @@ import { motion, useScroll } from 'framer-motion'
 const ScrollbasedAnimations = () => {
     const { scrollYProgress} = useScroll();
   return (
-    <div>
+    <div style={{width:"600px", height:"50vh"}}>
+     <h1 style={{fontSize:"larger"}}>Basic scroll based animation (this thing 👇)</h1>
+     <br/>
         <motion.div
         style={{
             scaleX: scrollYProgress,
@@ -18,7 +20,7 @@ const ScrollbasedAnimations = () => {
         />
         <div
         style={{
-            maxWidth:"750px",
+            maxWidth:"600px",
             margin:"auto",
             padding:"1.2rem",
             display: "flex",
@@ -35,38 +37,7 @@ const ScrollbasedAnimations = () => {
             Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
             <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
                  Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-                 Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-                 Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-            Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-            Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-                 Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-                 Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-                 <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-                 Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-            Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-            Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-                 Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-                 Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-                 Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-            Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-            Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-                 Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
-            <p>Ad dolore id fugiat ullamco id. Non sit laborum dolor duis.
-                 Labore quis dolore dolore ex laborum ut labore nostrud minim irure occaecat dolor incididunt eiusmod.</p>
+           
         </div>
     </div>
   )

@@ -14,6 +14,8 @@ export default function MotionBasic() {
         height: "100vh",
         gap:"0.8rem"
       }}>
+        <h1 style={{fontSize:"larger"}}>Basic animation with motion props</h1>
+        <br/>
         <motion.button className='btn' onClick={() => setIsVisible(!isVisible)} layout>SHOW/HIDE</motion.button>
         <AnimatePresence mode='popLayout'>
         {isVisible && 
@@ -38,7 +40,10 @@ export default function MotionBasic() {
           style={{
             width:150,
             height:150,
-            backgroundColor:"black"
+            backgroundColor:"black",
+            display: "flex",
+            alignItems:"center",
+            justifyContent:"center"
           }}
         >
         </motion.div>)}

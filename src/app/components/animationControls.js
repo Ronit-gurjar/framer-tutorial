@@ -19,6 +19,8 @@ const AnimationControls = () => {
         height: "100vh",
         gap:"0.8rem"
       }}>
+        <h1 style={{fontSize:"larger"}}>Basic animation with controls</h1>
+        <br/>
         <button onClick={handleClick1} className='btn'>flip it</button>
         <motion.div
             style={{
