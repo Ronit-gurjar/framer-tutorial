@@ -28,4 +28,4 @@ const Guestures = () => {
   )
 }
 
-export default Guestures;
+export default Guestures
