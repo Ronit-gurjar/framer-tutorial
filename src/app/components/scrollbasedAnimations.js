@@ -1,10 +1,21 @@
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, useScroll } from 'framer-motion'
 
 const ScrollbasedAnimations = () => {
+    const { scrollYProgress} = useScroll();
   return (
     <div>
-        
+        <motion.div
+        style={{
+            scaleX: scrollYProgress,
+            transformOrigin: "left",
+            position: "sticky",
+            top: 0,
+            width: "100%",
+            height: "40px",
+            background:"blue"
+        }}
+        />
         <div
         style={{
             maxWidth:"750px",
